@@ -24,3 +24,71 @@ addTwo(3)(5) # 10
 We can assume any number being passed in will be valid whole number.
 """
 
+# # global number
+# number = 0 
+
+# def add(num, to=[]):
+#     to.append(num)
+#     global number
+#     number = sum(to)
+#     return number
+
+# print(add(2))
+
+class add(int):
+    def __call__(self,n):
+        return add(self+n)
+    
+print(add(2)(3)(4))
+
+######### Fancy Solutions/Cool Programming techniques #########
+"""
+def add(n):
+    return MyInt(n)
+    
+class MyInt(object):
+    def __init__(self, n):
+        self.value = n
+
+    def __add__(self, n):
+        return MyInt(self.value + n)
+        
+    def __sub__(self, n):
+        return MyInt(self.value - n)
+        
+    def __call__(self, n):
+        return MyInt(self.value + n)
+        
+    def __eq__(self, other):
+        if isinstance(other, MyInt):
+            return self.value == other.value
+        else:
+            return self.value == other
+"""
+
+"""
+class add(int):
+    __call__ = lambda self, value: add(self + value)
+"""
+
+"""
+class Addable:
+    def __init__(self, val):
+        self.val = val
+        
+    def __call__(self, val):
+        return Addable(self.val + val)
+        
+    def __eq__(self, other):
+        return self.val == other
+        
+    def __add__(self, other):
+        return self.val + other
+        
+    def __sub__(self, other):
+        return self.val - other
+        
+
+def add(n):
+    return Addable(n)
+"""
