@@ -14,5 +14,24 @@ Examples:
 The order of the permutations doesn't matter.
 """
 
-def permutations(s):
-    pass
+from itertools import permutations
+
+l1 = 'a'
+l2 = 'ab'
+l3 = 'aabb'
+
+def permutation(s):
+    perm = permutations(s)
+    array = []
+
+    for i in set(perm):
+        myTuple = i
+        x = "".join(myTuple)
+        # array.append(list(i).join(','))
+        array.append(x)
+
+    return array
+
+# print(permutation(l1))
+# print(permutation(l2))
+print(permutation(l3))
