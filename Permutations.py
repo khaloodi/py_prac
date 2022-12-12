@@ -15,6 +15,7 @@ The order of the permutations doesn't matter.
 """
 
 from itertools import permutations
+from itertools import combinations
 
 l1 = 'a'
 l2 = 'ab'
@@ -22,6 +23,8 @@ l3 = 'aabb'
 
 def permutation(s):
     perm = permutations(s)
+    combos = list(combinations(s,1))
+    print('Combos count: ', len(combos))
     array = []
 
     for i in set(perm):
