@@ -9,3 +9,4 @@ My 🧠
 - [x] Human readable time
 - [ ] Rot13
 - [ ] Chain adding function
+- [x] Permutations
