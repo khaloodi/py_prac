@@ -10,3 +10,4 @@ My 🧠
 - [ ] Rot13
 - [ ] Chain adding function
 - [x] Permutations
+- [ ] Tic-Tac-Toe Checker
