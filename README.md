@@ -11,3 +11,4 @@ My 🧠
 - [ ] Chain adding function
 - [x] Permutations
 - [ ] Tic-Tac-Toe Checker
+- [ ] Searchcademy (Binary Search w/null values)
