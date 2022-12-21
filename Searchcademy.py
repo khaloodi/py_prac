@@ -38,5 +38,7 @@ def sparse_search(data, search_val):
         right += 1
         left -= 1
 
-    
+    if data[mid] == search_val:
+        print("{0} found at position {1}".format(search_val, mid))
+        return None
 
