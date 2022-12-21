@@ -42,3 +42,9 @@ def sparse_search(data, search_val):
         print("{0} found at position {1}".format(search_val, mid))
         return None
 
+
+
+
+sparse_search(["A", "", "", "", "B", "", "", "", "C"], "B")
+sparse_search(["A", "", "", "", ""], "A")
+sparse_search(["", "", "", "", "Z"], "Z")
