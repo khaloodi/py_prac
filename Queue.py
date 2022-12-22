@@ -4,7 +4,7 @@
 Build a queue data structure
 """
 
-from node import Node
+from Node import Node
 
 class Queue:
   def __init__(self, max_size=None):
