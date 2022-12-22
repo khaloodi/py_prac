@@ -12,7 +12,5 @@ My 🧠
 - [x] Permutations
 - [ ] Tic-Tac-Toe Checker
 - [ ] Searchcademy (Binary Search w/null values)
-<<<<<<< HEAD
-=======
 - [x] Queue
->>>>>>> 680d617 (add queue creation problem)
+- [x] Stack
