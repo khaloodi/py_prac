@@ -8,7 +8,7 @@ My 🧠
 
 - [x] Human readable time
 - [ ] Rot13
-- [ ] Chain adding function
+- [x] Chain adding function
 - [x] Permutations
 - [ ] Tic-Tac-Toe Checker
 - [ ] Searchcademy (Binary Search w/null values)
