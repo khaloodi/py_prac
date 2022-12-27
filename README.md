@@ -15,3 +15,4 @@ My 🧠
 - [x] Queue
 - [x] Stack
 - [ ] Two Sum
+- [ ] HashMap
