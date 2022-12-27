@@ -1,4 +1,4 @@
-#!usr/bin/env python
+#!/usr/bin/env python
 
 """
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -31,3 +31,24 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 """
 
+
+# def twoSum(nums, target):
+#     answer = ()
+#     for idx, i in enumerate(nums):
+#         y = target - i
+#         if y in nums:            
+#             answer += (idx,)
+#             # answer.append(nums.index(y))        
+#     return list(answer)
+
+# print(twoSum([2,7,11,15], 9)) #should return [0,1]
+
+#### Review ####
+def twoSum(nums, target):
+    d={}
+    for i, num in enumerate(nums):
+        if target-num in d:
+            return d[target-num], i
+        d[num]=i
+
+print(twoSum([2,7,11,15], 9)) #should return [0,1]
