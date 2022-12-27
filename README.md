@@ -8,11 +8,11 @@ My 🧠
 
 1. - [x] Human readable time
 2. - [ ] Rot13
-- [x] Chain adding function
-- [x] Permutations
-- [ ] Tic-Tac-Toe Checker
-- [ ] Searchcademy (Binary Search w/null values)
-- [x] Queue
-- [x] Stack
-- [ ] Two Sum
-- [ ] HashMap
+3. - [x] Chain adding function
+4. - [x] Permutations
+5. - [ ] Tic-Tac-Toe Checker
+6. - [ ] Searchcademy (Binary Search w/null values)
+7. - [x] Queue
+8. - [x] Stack
+9. - [ ] Two Sum
+10. - [ ] HashMap
