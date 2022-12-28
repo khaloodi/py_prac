@@ -13,12 +13,13 @@ of flowers to their meanings. In order to avoid collisions when our hashing
  chaining. We will implement the Linked List data structure for each of 
  these separate chains.
 """
+from linked_list import Node, LinkedList
 
 class HashMap:
 
     def __init__(self, size):
         self.array_size = size
-        self.array = [None for num in range(size)]
+        self.array = [LinkedList() for num in range(size)]
 
     def hash(self, key):
         return sum(key.encode())
@@ -28,8 +29,25 @@ class HashMap:
 
     def assign(self, key, value):
         array_index = self.compress(self.compress(key))
-        self.array[array_index] = [key, value]
+        # self.array[array_index] = [key, value]
+        payload = Node([key, value])
+        list_at_array = self.array[array_index]
+        for item in list_at_array:
+            if key == item[0]:
+                item[1] = value
+                return 
+        list_at_array.insert(payload)
 
     def retrieve(self, key):
         array_index = self.compress(self.hash(key))
-        payload = self.array[array_index]
+        # payload = self.array[array_index]
+        list_at_index = self.array[array_index]
+
+        # if payload is not None and payload[0] == key:
+        #     return payload[1]
+        # else:
+        #     return None
+        for item in list_at_index:
+            if key == item[0]:
+                return item[1]
+        return None
