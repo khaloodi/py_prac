@@ -22,3 +22,14 @@ class HashMap:
 
     def hash(self, key):
         return sum(key.encode())
+
+    def compress(self, hash_code):
+        return hash_code%self.array_size
+
+    def assign(self, key, value):
+        array_index = self.compress(self.compress(key))
+        self.array[array_index] = [key, value]
+
+    def retrieve(self, key):
+        array_index = self.compress(self.hash(key))
+        payload = self.array[array_index]
