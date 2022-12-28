@@ -14,3 +14,11 @@ of flowers to their meanings. In order to avoid collisions when our hashing
  these separate chains.
 """
 
+class HashMap:
+
+    def __init__(self, size):
+        self.array_size = size
+        self.array = [None for num in range(size)]
+
+    def hash(self, key):
+        return sum(key.encode())
