@@ -15,5 +15,5 @@ My 🧠
 7. - [x] Queue
 8. - [x] Stack
 9. - [ ] Two Sum
-10. - [ ] HashMap
-11. - [ ] Blossom
+10. - [x] HashMap
+11. - [x] Blossom
